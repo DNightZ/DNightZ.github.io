@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     for (var y in obj[x]) {
                       if (typeof obj[x][y] === 'object') {
                         for (var z in obj[x][y]) {
-                          fd.append(x+'['+y+']['+y+']', obj[x][y][z]);
+                          fd.append(x+'['+y+']['+z+']', obj[x][y][z]);
                         }
                       } else {
                         fd.append(x+'['+y+']', obj[x][y]);
