@@ -1,5 +1,5 @@
 export const login = {
-    data: function() {
+    data:function() {
         return {
             img:1,
             hs:0,
