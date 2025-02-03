@@ -172,7 +172,7 @@ form {
     100% { opacity:1;margin-left:0;}
 }
 
-#spiner{
+#spinner{
     background: #919fa640 url(../images/loader.gif) no-repeat;
     background-position: center;
     background-size: 50px;
