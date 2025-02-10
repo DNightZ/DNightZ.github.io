@@ -5,8 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-
-
 #wrapper {
     width: 100%;
     display: flex;
@@ -33,6 +31,7 @@
     font-size: 1.5em;
     margin-left: 10px;
     color: white;
+    text-align: left;
 }
 
 .inner-form {
@@ -99,14 +98,9 @@ form {
 }
 
 .w40 {
-    order: 0; /* Переміщення логотипа вправо */
-    text-align: right; /* Вирівнювання зображення праворуч */
+    width: 40%;
 }
 
-.w60 {
-    order: 0; /* Переміщення заголовка вліво */
-    text-align: left; /* Вирівнювання тексту ліворуч */
-}
 
 .header {
     width: 100%;
@@ -180,6 +174,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    direction:rtl;
 }
 
 .wrapper {
@@ -192,7 +187,7 @@ body {
 }
 
 .flex {
-    flex-direction: row-reverse;
+
     display: flex;
 }
 
@@ -247,7 +242,6 @@ input[type="date"] {
 table {
     width: 100%;
     border-collapse: collapse; /* collapse borders to single line */
-    direction: rtl;
   }
 
   table a {
@@ -399,7 +393,7 @@ table {
 
   .header .logo{
     padding: 5px 0;
-    direction: rtl;
+
   }
 
   .w70{
@@ -413,7 +407,7 @@ table {
     position: relative;
     cursor: pointer;
     padding: 0;
-    direction: rtl;
+
 }
 
 #user-circle {
@@ -466,7 +460,7 @@ table {
     display: flex;
     align-items: center;
     gap: 20px;
-    direction: rtl;
+
 }
 
 #menu ul {
@@ -603,7 +597,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 8px; /* Отступ между текстом и иконкой */
-    direction: rtl;
+
 }
 
 .btnS:hover {
@@ -699,7 +693,7 @@ a {
     background: #f9f9f9;
     padding: 10px;
     border-radius: 5px;
-    direction: rtl;
+
 }
 
 #chartOuter {
@@ -771,26 +765,19 @@ a {
 } 
 
 .text-end {
-    text-align: right;
+    text-align: end;
 }
 
 .text-start {
-    text-align: left;
+    text-align: start;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.max-width-panel {
-    width: 100%;
-}
 
 .panel {
     display: flex;
     width: 100%;
+
 }
 
 .w20 {
@@ -799,7 +786,6 @@ a {
 
 .w60 {
     width: 60%;
-    text-align: center;
 }
 
 .ptb20 {
@@ -807,13 +793,6 @@ a {
     padding-bottom: 20px;
 }
 
-.text-start {
-    text-align: left;
-}
-
-.text-end {
-    text-align: right;
-}
 
 .ac {
     text-align: center;
@@ -825,17 +804,64 @@ a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    direction: ltr; /* Убедитесь, что кнопки располагаются слева направо */
+
 }
 
 .btnS:hover {
     background-color: grey;
 }
 
+.w50 {
+    width: 50%;
+}
 
+.tabs {
+    margin-top: 15px;
+}
 
+.tabs ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-start;
+}
 
+.tabs ul li {
+    padding: 8px 15px;
+    margin-right: 5px;
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #777;
+    border-bottom: 3px solid #c2c4c3;
+}
 
+.tabs ul li:hover {
+    background: #ddd;
+}
+
+.tabs ul li.active {
+    background: white;
+    border-bottom: 3px solid #28a745;
+    font-weight: bold;
+    color: #000;
+}
+
+.pb0 {
+    padding-bottom: 0;
+}
+
+.ptb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ptb15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 
 
