@@ -5,7 +5,10 @@ export var img = {
         } 
     }, 
     mounted() { 
-        this.value = this.modelValue; 
+        this.parent = this.$parent.$parent.$parent.$parent;
+        if(this.modelValue!=undefined){
+            this.value = this.parent.url+'/'+this.modelValue;
+        } 
     }, 
     methods: { 
         change(event) { 
@@ -26,13 +29,13 @@ export var img = {
         <div class="image-preview-area"> 
             <a href="#" class="select_img" @click.prevent="$refs.input.click()"> 
                 <span v-if="value"> 
-                    <img src="value" class="in"> 
+                    <img :src="value" class="im"> 
                 </span> 
-                <span v-if="value"> 
-                    <img src="/app/views/images/placeholder.png"> 
+                <span v-if="!value"> 
+                    <img :src="'https://affiliate.yanbasok.com/app/views/images/placeholder.png'"> 
                 </span> 
             </a> 
         </div> 
-        <input type="file" data-name="image" ref="input" accept="image/ e/jpeg, image/png,image/gif, f.image/webp, image/svg+xml" @change="change(se 
+        <input type="file" data-name="image" ref="input" accept="image/jpeg, image/png,image/gif, image/webp, image/svg+xml" @change="change($event)"> 
     `
 };
